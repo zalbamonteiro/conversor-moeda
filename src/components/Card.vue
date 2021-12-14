@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     getCurrency: async function() {
-      const URL = `http://economia.awesomeapi.com.br/json/last/${this.selected}-BRL`;
+      const URL = `https://economia.awesomeapi.com.br/json/last/${this.selected}-BRL`;
       const result = await fetch(URL)
         .then((res) => res.json())
         .then((res) => res)
